@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name = 'viewport' content = 'width = device-width'>
+    <title> Home </title>
+    <link rel = 'preconnect' href = 'https://fonts.gstatic.com'>
+    <link href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap' rel = 'stylesheet'>
+    <link rel = 'stylesheet' href = 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+        
+<body>
+    <section class = 'header'>
+        <nav>
+            <a href = 'index.html'><img src = 'css/images/High Resolution Logo - Transparent Background (1).png'></a>    
+            <div class = 'sidenav'>
+                <ul id = 'mySidenav'>
+                    <i class = 'fa fa-times' id = 'hideMenu' onclick="hideMenu()"></i>
+                    <li class = 'hover'><a href = 'index.html'>Home</a></li>
+                    <li class = 'hover'><a href = 'Services.html'>Services</a></li>
+                    <li class = 'hover'><a href = 'Gallery.html'>Gallery</a></li>
+                    <li class = 'hover'><a href = 'About.html'>About</a></li>
+                    <li class = 'hover'><a href = 'Contact.html'>Contact</a></li>
+                </ul>
+            </div>
+            <i class = 'fa fa-bars' id = 'showMenu' onclick="showMenu()"></i>
+        </nav>    
+    </section>
+    
+<script>
+    
+    function showMenu(){
+        var menu = document.getElementById("mySidenav");
+        menu.style.display = 'block';
+    }
+    
+    function hideMenu(){
+        var menu = document.getElementById('mySidenav');
+        menu.style.display = 'none';
+    }
+</script>
+<style>
+    /*Background*/
+    .header{
+        min-height: 100vh;
+        width: 100;
+        background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(css/images/banner.jpg); 
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+</style>
+<div class='text-box'>
+        <h1>Insta-Tek</h1>
+            <p>Smart Home Installations</p>
+        <a href = 'About.html' class = 'tb-btn'> Visit us to know more</a>
+        </div>
+
+<section class = 'services'>
+        <h1> Services We Offer </h1>
+        <p>We offer a personalised bespoke service, individual to each customer's specific needs.<br>
+        Each Customer's journey starts with a free phone consultation.<br>
+        We use a standard base set of technology, so our solutions are tried and tested.<br>
+        Get taught how to use your system.</p>
+        
+        <div class = 'row'>
+                <div class = 'services-col'>
+                        <h3> Smart Appliances </h3>
+                        <p> A wide range of indoor, smart home devices. These range from Entertainment, Audio, Lighting, Desk Setups and Utility. </p>
+                </div>
+                
+                <div class = 'services-col'>
+                        <h3> Home Securiy </h3>
+                        <p> Ensure your property is kept safe by installing Locks, Cameras and Doorbells. </p>
+                </div>
+                
+                <div class = 'services-col'>
+                        <h3> Tutoring </h3>
+                        <p> Recieve tutoring on your new installed devices. </p>
+                </div>
+        </div>
+</section>
+
+<section class = 'about'>
+         <h1> Who We Are </h1>
+        <div class = 'box'>
+                <div class = 'sidepic'>
+                        <b><img src = 'css/images/smarthome.jpg'></b>
+                </div>
+                <div class = 'text'>
+                        <p> We are a start up company who aims to make your life simpler through setups and configurations on smart home equipment. <br>
+                        If you are working or simply wanting to live in comfort knowing your home is safe and automated, whereever you are, it will be waiting for you the way you left it. </p>
+                </div>
+        </div>
+ </section>
+
+<section class = 'gallery'>
+        <h1> A Gallery Preview </h1>
+        <p> These are a few photos from the gallery, to give an example of what can be done at your own home. </p>
+        
+        <div class = 'row'>
+                <div class = 'gallery-col'>
+                        <c><img src = 'css/images/light.jpg'></c>
+                        <div class = 'layer'>
+                                <h3> LIGHTING </h3>
+                        </div>
+                </div>
+                <div class = 'gallery-col'>
+                        <c><img src = 'css/images/alexa.jpg'></c>
+                        <div class = 'layer'>
+                                <h3> VOICE AI </h3>
+                        </div>
+                </div>
+                <div class = 'gallery-col'>
+                        <c><img src = 'css/images/phone.jpg'></c>
+                        <div class = 'layer'>
+                                <h3> CONTROLS </h3>
+                        </div>
+                </div>
+        </div>  
+</section>
+
+<section class = 'contact'>
+    <h1> Reliable Services At Fair Prices </h1>
+    <a href = 'Contact.html' class = 'tb-btn'> CONTACT US</a>
+</section>
+<style>
+    .contact{
+        min-height: 100px auto;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(css/images/home.jpg); 
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        padding: 100px 0;
+    }
+</style>    
+
+<section class = 'footer'>
+    <h4> Follow Us On </h4>
+    <div class = 'icons'>
+        <i class = 'fa fa-facebook'></i>
+        <i class = 'fa fa-twitter'></i>
+        <i class = 'fa fa-instagram'></i>
+        <i class = 'fa fa-linkedin'></i>
+    </div>
+</section>
